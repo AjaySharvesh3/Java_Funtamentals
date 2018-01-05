@@ -4,6 +4,9 @@ public class Main {
 	// write your code here
         system();
         variables();
+        character();
+        booleanValue();
+        variableStorage();
     }
     public static void system() {
         System.out.println("Hello Java :) " );
@@ -30,4 +33,24 @@ public class Main {
      * float    32      1.4*10^-45  3.4*10^38   0.0f
      * double   64      4.9*10^-324 1.7*10^308  0.0 or 0.0d
       */
+
+    public static void character() {
+        char uValue = 'U';
+        char uValue1 = '\u00DA';
+        System.out.println(uValue);
+        System.out.println(uValue1);
+    }
+    public static void booleanValue() {
+        boolean iLoveJava = true;
+        System.out.println(iLoveJava);
+    }
+    public static void variableStorage() {
+        int firstValue = 100;
+        System.out.println(firstValue);
+        int otherValue = firstValue;
+        System.out.println(otherValue);
+        firstValue = 40;
+        System.out.println(firstValue);
+
+    }
 }
