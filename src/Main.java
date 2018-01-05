@@ -7,6 +7,8 @@ public class Main {
         character();
         booleanValue();
         variableStorage();
+        increments();
+        compound();
     }
     public static void system() {
         System.out.println("Hello Java :) " );
@@ -51,6 +53,29 @@ public class Main {
         System.out.println(otherValue);
         firstValue = 40;
         System.out.println(firstValue);
+    }
+    public static void increments() {
+        int myVal = 5;
+        System.out.println("incremented myValu: "+ ++myVal);
+        System.out.println("decremented myValu: "+ --myVal);
+        increment();
+    }
+    public static void increment() {
+        int mayValu = 5;
+        System.out.println("incremented myValu: "+ mayValu++);
+        System.out.println(mayValu);
+        System.out.println("decremented myValu: "+ mayValu--);
+        System.out.println(mayValu);
+    }
+    public static void compound() {
+        int myValu = 50;
+        myValu -= 5;
+        System.out.println(myValu);
 
+        int result = 100;
+        int val1 = 5;
+        int val2 = 10;
+        result /= val1 * val2;
+        System.out.println(result);
     }
 }
