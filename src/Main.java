@@ -9,6 +9,8 @@ public class Main {
         variableStorage();
         increments();
         compound();
+        mathOperation();
+        typeConversion();
     }
     public static void system() {
         System.out.println("Hello Java :) " );
@@ -77,5 +79,58 @@ public class Main {
         int val2 = 10;
         result /= val1 * val2;
         System.out.println(result);
+    }
+    public static void mathOperation() {
+        int valA = 21;
+        int valB = 6;
+        int valC = 3;
+        int valD = 1;
+
+        int result1 = valA - valB / valC * valC ;
+        int result2 = (valA - valB) / (valC * valD);
+
+        System.out.println("MathOperation Result1: " + result1);
+        System.out.println("MathOperation Result2: " + result2);
+
+        int result3 = valA / valC * valD + valB;
+        int result4 = valA / (valC * (valD + valB));
+
+        System.out.println("MathOperation Result3: " + result3);
+        System.out.println("MathOperation Result4: " + result4);
+
+        typeCoversion2();
+    }
+    public static void typeConversion() {
+        int ival = 50;
+        long lval = ival;
+        System.out.println("Type Conversion : " + lval);
+        System.out.println("Type Conversion : " + ival);
+    }
+    public static void typeCoversion2() {
+        float floatVal = 1.0f;
+        double doubleVal = 4.0d;
+        byte byteVal = 7;
+        short shortVal = 7;
+        long longVal = 5;
+
+        short result1 = byteVal; //Success
+        System.out.println("Success");
+        //short result1 = longVal; //Failure (ERROR MESSAGE).
+        short result2 = (short)byteVal; //Success
+        System.out.println("Success: " + result2);
+
+        short result3 = (short) (byteVal - longVal);
+        System.out.println("Success "+ "Print result as: " + result3);
+
+        //long result4 = longVal - floatVal; //Failure (ERROR MESSAGE)
+        float result4 = longVal - floatVal;
+        System.out.println("Success "+ "Print result as: " + result4);
+
+        //float result4 = longVal - doubleVal; //Failure (ERROR MESSAGE)
+
+        //long result5 = shortVal - longVal + floatVal + doubleVal;//Failure (ERROR MESSAGE)
+
+        double result5 = (long)shortVal - longVal + floatVal + doubleVal;
+        System.out.println("Success "+ "Print result as: " + result5);
     }
 }
